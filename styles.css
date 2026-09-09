@@ -1,189 +1,86 @@
-/* Aplica a rolagem suave em todos os containers possíveis */
-html, body, #main {
-  scroll-behavior: smooth !important;
-}
+/* ===== RESPONSIVO - CELULAR ===== */
+@media (max-width: 768px) {
 
-/* Compensação do menu fixo */
-#hero,#two, #end {
-  scroll-margin-top: 15vh;
-}
+  .nav-container {
+    padding: 0 20px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-@font-face{
-    font-family: Product Sans;
-    src: url(fontes/Product\ Sans\ Regular.ttf);
-}
+  .logo img {
+    height: 80px;
+  }
 
-*{
-    margin: 0;
+  .nav-menu {
     padding: 0;
-    box-sizing: border-box;
-    font-family: Product Sans;
-}
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-/* Mude o height de 100% para min-height: 100% */
-html, body {
-    min-height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
+  .nav-container a {
+    font-size: 13px;
+  }
 
-.nav-container{
-    position: fixed; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 15vh;
-    z-index: 99;
-    padding: 0 100px;
-    
-}
-
-.nav-container {
-  background-color: rgba(14, 40, 78, 0.8); /* azul escuro com 80% de opacidade */
-  backdrop-filter: blur(10px); /* desfoca o que está atrás */
-  -webkit-backdrop-filter: blur(10px); /* suporte para o Safari */
-}
-
-
-.logo img{
-    height: 150px;
- /* ajuste conforme o tamanho da imagem */
-}
-
-.nav-container a{
-    color:#EAA962;
-    text-decoration: none;
-    font-size: 16px;   
-}
-
-
-.nav-menu{
-    display: flex;
-    gap: 50px;
-    align-items: center;  
-    padding: 0 100px; 
-}
-
-#parede{
+  #parede {
     width: 100vw;
-}
+    height: auto;
+  }
 
-/*parte 2*/
-
-.two{
-    display: flex;
-    margin-top: 15vh;
-     gap: 2vh;
-}
-
-
-.left-side, .right-side{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  .two {
     flex-direction: column;
-    gap: 5vh;
-    width: 50%;
-    height: 100%;
-}
+    margin-top: 20vh;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
 
-.left-side img{
-    width: 25vw;  
-    margin-left: 100px; 
-    border-radius: 20px;
-}
-
-
-.right-side h2{
-    color: #080808;
-    font-size: 5vw;
-
-}
-.right-side p{
-    color: #0c0a0a;
-    font-size: 1vw;
-    width: 80%;
-
-}
-
-
-
-
-
-
-/*ULTIMA PARTE*/
-
-.end {
-    display: flex;
+  .left-side, .right-side {
     width: 100%;
-    height: 45vh;
-    background: #103469;
-    margin-top: 27vh;
-    gap: 20vh;
-}
+  }
 
-.logo2 img{
-    height: 250px;
- /* ajuste conforme o tamanho da imagem */
-}
+  .left-side img {
+    width: 80%;
+    margin-left: 0;
+  }
 
-.logo2 {
-    margin-left: 100px;
-    margin-top: 3vh;
-}
+  .right-side {
+    align-items: center;
+  }
 
-.horario-atendimento, .contato{
-    justify-content: center;
-    color: #fff;
-    margin-top: 10vh
+  .right-side h2 {
+    font-size: 8vw;
+  }
 
-}
+  .right-side p {
+    font-size: 4vw;
+    width: 90%;
+  }
 
+  .end {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 30px 20px;
+    margin-top: 10vh;
+  }
 
-.horario-atendimento p {
-  line-height: 1.6; /* Aumente o número se quiser mais espaço */
-}
+  .logo2 {
+    margin-left: 0;
+    text-align: center;
+  }
 
-.contato a, 
-.contato p {
-  line-height: 1.6;
-  display: inline-block; /* Garante que o espaçamento seja aplicado corretamente nos links */
-}
+  .logo2 img {
+    height: 150px;
+  }
 
-.horario-atendimento h3,
-.contato h3 {
-  margin-bottom: 15px;
-}
-
-
-
-/*OLHAR DEPOIS*/
-
-.item-horario, .item-contato{
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 15px;
-}
-
-
-
-.item-horario i, .contato i{
-    color: #fff; /* mesma cor dourada do seu tema */
-    font-size: 18px;
-    margin-top: 3px; /* alinha melhor com a primeira linha de texto */
-}
-
-.contato a, .contato p{
-    color: #fff;
-    text-decoration: none;
-}
-
-.contato a:hover{
-    text-decoration: underline; /* indica que é clicável */
-}
-
-.contato{
-    margin-right: 100px;
+  .horario-atendimento, .contato {
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
