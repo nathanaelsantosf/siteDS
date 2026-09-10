@@ -9,72 +9,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <Header>
+    <header>
+        <img id="logo" src="assets/logoSF.png" alt="logo">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#two">Escritório</a></li>
+                <li><a href="#">Áreas de Atuação</a></li>
+                <li><a href="#end">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
 
-        <img id="logo"  src="assets/logoSF.png" alt="logo">
-        <span id="burguer"  class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-       <menu id="itens">
-         <ul>
-            <li><a href="#hero">Início</a></li>
-            <li><a href="#two">Escritório</a></li>
-            <li> <a href="#">Áreas de Atuação</a></li>
-            <li><a href="#end">Contato</a></li>
-         </ul>
-       </menu>
-    </Header>
-     
     <main>
-     <article>
-        <h2>TESTANDO</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod, possimus rerum est quasi laborum veritatis at natus doloribus odio modi distinctio doloremque nostrum dolorem harum dolore necessitatibus velit iusto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolorum mollitia nihil libero, tempore veritatis at inventore voluptates fugit ea debitis dicta nostrum aliquid perspiciatis! Magni voluptatibus alias praesentium hic!.</P>
-     </article>
+        <article>
+            <h2>TESTANDO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quod, possimus rerum est quasi laborum veritatis at natus doloribus odio modi distinctio doloremque nostrum dolorem harum dolore necessitatibus velit iusto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dolorum mollitia nihil libero, tempore veritatis at inventore voluptates fugit ea debitis dicta nostrum aliquid perspiciatis! Magni voluptatibus alias praesentium hic!.</p>
+        </article>
     </main>
 
-     <h2>Flavour Update</h2>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas accusantium nemo suscipit voluptatibus amet. Animi ad qui sequi. Sed nihil assumenda fuga autem, reiciendis quisquam ab consequuntur. Voluptas, labore voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, doloremque. Mollitia, dicta possimus officiis eius ipsum unde blanditiis sunt et vel. Quas perferendis voluptate aut ratione exercitationem necessitatibus ullam dicta?</p>
-           </div>
+    <section class="flavour" id="two">
+        <h2>Flavour Update</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas accusantium nemo suscipit voluptatibus amet. Animi ad qui sequi. Sed nihil assumenda fuga autem, reiciendis quisquam ab consequuntur. Voluptas, labore voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, doloremque. Mollitia, dicta possimus officiis eius ipsum unde blanditiis sunt et vel. Quas perferendis voluptate aut ratione exercitationem necessitatibus ullam dicta?</p>
+    </section>
 
-
+    <div class="end" id="end">
+        <div class="logo2">
+            <img src="assets/logoSF.png" alt="Logo">
         </div>
 
-
-
-
-
-
-
-
-
-
-        <div class="end" id="end">
-           <div class="logo2">
-                <img src="assets/logoSF.png" alt="Logo">
-            </div>
-
-
-           <div class="horario-atendimento">
+        <div class="horario-atendimento">
             <h3>Horário de atendimento</h3>
-             <div class="item-horario">
-              <i class="fa-solid fa-clock"></i>
+            <div class="item-horario">
+                <i class="fa-solid fa-clock"></i>
                 <div>
-                 <p>Seg - Sex</p>
-                 <p>8:00h - 12:00h</p>
-                 <p>14:00h - 17:00h</p>
-                 <p>Sáb – Dom</p>
-                 <p>Fechado</p>
+                    <p>Seg - Sex</p>
+                    <p>8:00h - 12:00h</p>
+                    <p>14:00h - 17:00h</p>
+                    <p>Sáb – Dom</p>
+                    <p>Fechado</p>
                 </div>
-             </div>
-           </div>
-
+            </div>
+        </div>
 
         <div class="contato">
-          <h3>Contato</h3>
+            <h3>Contato</h3>
+            <div class="item-contato">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/5585326587000" target="_blank">(88) 9799-0529</a>
+            </div>
+            <div class="item-contato">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://maps.app.goo.gl/iQAhbCxfdgFQwEki9" target="_blank">
+                    Av. Engenheiro Luiz Vieira, nº 320<br>
+                    De Lourdes, CEP 60177-250<br>
+                    Fortaleza – Ceará
+                </a>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-     <script src="scripts.js"></script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
