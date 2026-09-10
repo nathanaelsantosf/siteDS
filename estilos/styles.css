@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+
+html, body, #main {
+  scroll-behavior: smooth !important;
+}
+
+
+/* Compensação do menu fixo */
+#hero,#two, #end {
+  scroll-margin-top: 15vh;
+}
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html {
+  background-color: aliceblue;
+}
+
+/* Compensa a barra fixa, pra ela não cobrir o topo do conteúdo */
+body {
+  padding-top: 15vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  padding: 0 50px;
+  z-index: 99;
+  background-color: rgba(14, 40, 78, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header > h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+#logo{
+  height: 150px;
+  width: auto;
+}
+
+#burguer{
+  
+  display: block;
+  text-align: right;
+  margin-right: 100px;
+  font-size: 30px;
+  padding: 10px;
+  color: #EAA962; 
+}
+
+#burguer:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  
+}
+
+
+
+menu {
+  display: none;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  width: 100%;
+  background-color: rgba(14, 40, 78, 0.95);
+}
+
+menu > ul {
+  list-style-type: none;
+
+}
+
+menu > ul > li > a{
+   display: block;
+   padding: 10px;
+   text-decoration: none;
+   text-align: center;
+   background-color: rgb(73, 71, 71);
+   color: white;
+   border-top: rgb(168, 168, 168);
+}
+
+menu > ul > li > a:hover {
+  background-color: gray;
+}
+
+main{
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+   margin-top: 10px;
+  padding:  10px;
+  border-radius: 10px;
+ 
+}
+
+article > h1 {
+  padding-bottom: 20px;
+}
+
+article > p {
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
