@@ -47,7 +47,7 @@ header {
 }
 
 #logo {
-  height: 45px;
+  height: 100px;
   width: auto;
 }
 
@@ -142,10 +142,6 @@ article > p {
   text-align: center;
 }
 
-.logo2 img {
-  width: 150px;
-  height: auto;
-}
 
 .horario-atendimento, .contato {
   width: 100%;
