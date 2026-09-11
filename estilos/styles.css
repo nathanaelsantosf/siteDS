@@ -27,7 +27,7 @@ body, html {
 
 /* Compensa a barra fixa, pra ela não cobrir o topo do conteúdo */
 body {
-  padding-top: 15vh;
+  padding-top: 0px;
 }
 
 header {
@@ -70,7 +70,8 @@ header {
 menu {
   display: none;
   position: absolute;
-  top: 15vh;
+  text-align: right;
+  top: 10vh;
   left: 0;
   width: 100%;
   background-color: rgba(14, 40, 78, 0.95);
@@ -96,12 +97,11 @@ menu > ul > li > a:hover {
 
 /* ===== CARD "TESTANDO" ===== */
 main {
-  width: 94vw;
-  background-color: white;
-  margin: auto;
-  margin-top: 10px;
-  padding: 15px;
-  border-radius: 10px;
+
+  
+  
+  margin-top: 0px;
+  
 }
 
 article > h1 {
@@ -112,6 +112,16 @@ article > p {
   text-align: justify;
   margin-bottom: 20px;
   text-indent: 0;
+}
+
+main img{
+  margin-top: 0px;
+  width: 100%;
+}
+
+menu {
+  background-color: #103469;
+  position: fixed;
 }
 
 /* ===== SEÇÃO "FLAVOUR UPDATE" ===== */
@@ -128,6 +138,69 @@ article > p {
 .flavour p {
   text-align: justify;
 }
+
+
+/* ===== THREE ===== */
+
+#three{
+  padding-bottom: 60px;
+}
+
+.areas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.atuacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  gap: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #174181;
+  border-radius: 20px;
+}
+
+.atuacao img{
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.atuacao h4{
+  color: #fff;
+}
+
+.atuacao p{
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===== RODAPÉ / CONTATO ===== */
 .end {
